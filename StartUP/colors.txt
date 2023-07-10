@@ -1,0 +1,4 @@
+Header: 
+	buttons color: (gray)rgba(227,228,231,255)
+	close-button-hover: rgba(251,104,95,255)
+	other-button-hover:rgba(215,219,225,255)

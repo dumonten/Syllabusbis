@@ -1,0 +1,26 @@
+{
+	"QMainWindow":[
+		{
+			"tittle":"My Window",
+			"icon":":/icons/icons/airplay.svg",
+			"frameless": true,
+			"sizeGrip": "size_grip",
+			"navigation":[
+				{
+					"minimize":"foldBtn",
+					"close": "closeBtn",
+					"restore":[
+						{	
+							"buttonName": "restoreBtn",
+							"normalIcon": ":/icons/icons/square.svg",
+							"maximizedIcon": ":/icons/icons/copy.svg"
+						}
+					],
+					"moveWindow": "headerContainer",
+					"tittleBar": "headerContainer"
+				}
+			]
+		}
+	]
+}
+
