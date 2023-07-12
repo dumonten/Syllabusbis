@@ -37,7 +37,7 @@
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_11" stretch="1,2,10">
+   <layout class="QVBoxLayout" name="verticalLayout_11">
     <item>
      <widget class="QWidget" name="headerContainer" native="true">
       <property name="minimumSize">
@@ -1780,6 +1780,108 @@
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="footerContainer" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_27">
+       <item>
+        <widget class="QFrame" name="footerLeftSubContainer">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_25">
+          <item>
+           <widget class="QPushButton" name="pageFooterBtn">
+            <property name="text">
+             <string>Page:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="wordsFooterBtn">
+            <property name="text">
+             <string>Words:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="spellCheckFooterBtn">
+            <property name="text">
+             <string>SpellCheck:</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="footerRightSubContainer">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_26">
+          <item>
+           <widget class="QPushButton" name="eyeProtectionModeFooterBtn">
+            <property name="text">
+             <string>Eye Protection Mode</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="fitPageFooterBtn">
+            <property name="text">
+             <string>Fit Page to Current Window</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="zoomLevelFooterBtn"/>
+          </item>
+          <item>
+           <widget class="QFrame" name="layout_16">
+            <layout class="QHBoxLayout" name="_17">
+             <item>
+              <widget class="QPushButton" name="zoomOutFooterBtn">
+               <property name="text">
+                <string>-</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="horizontalSlider">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="zoomInFooterBtn">
+               <property name="text">
+                <string>+</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="fullScreenFooterBtn">
+            <property name="text">
+             <string>Full Screen</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
       </layout>
