@@ -7,39 +7,45 @@
     <x>0</x>
     <y>0</y>
     <width>1993</width>
-    <height>860</height>
+    <height>474</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">#headerContainer {
-  background-color: rgb(227,228,231);
-}
-
-#headerRightSubContainer {
-  background-color: rgb(227,228,231);
-  border: none; 
-}
-
-#headerRightSubContainer QPushButton {
-  background-color: rgb(227,228,231);
-  border: none; 
-}
-
-#headerRightSubContainer QPushButton:hover {
-  background-color: rgb(215,219,225); 
-}
-
-#headerRightSubContainer #closeBtn:hover {
-  background-color: rgb(251,104,95); 
-}</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget {
+  background-color: rgb(227,228,231);
+}</string>
+   </property>
    <layout class="QVBoxLayout" name="verticalLayout_11">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
     <item>
      <widget class="QWidget" name="headerContainer" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
       <property name="minimumSize">
        <size>
         <width>0</width>
@@ -52,7 +58,44 @@
         <height>40</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">#headerContainer {
+  background-color: rgb(227,228,231);
+}
+
+#headerLeftSubContainer {
+  background-color: rgb(227,228,231);
+  border: none; 
+}
+
+#headerRightSubContainer {
+  background-color: rgb(227,228,231);
+  border: none; 
+}
+
+#headerContainer QPushButton {
+  background-color: rgb(227,228,231);
+  border: none; 
+}
+
+#headerContainer QPushButton:hover {
+  background-color: rgb(215,219,225); 
+}
+
+#headerContainer #closeBtn:hover {
+  background-color: rgb(251,104,95); 
+}
+
+#headerContainer #mainBtn {
+ background-color: rgb(127, 3, 161);
+ color: white; 
+ margin: 0 1px 0 0; 
+}</string>
+      </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
        <property name="leftMargin">
         <number>0</number>
        </property>
@@ -65,7 +108,7 @@
        <property name="bottomMargin">
         <number>0</number>
        </property>
-       <item>
+       <item alignment="Qt::AlignLeft">
         <widget class="QFrame" name="headerLeftSubContainer">
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -90,13 +133,13 @@
            <widget class="QPushButton" name="mainBtn">
             <property name="minimumSize">
              <size>
-              <width>0</width>
+              <width>100</width>
               <height>30</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>16777215</width>
+              <width>100</width>
               <height>30</height>
              </size>
             </property>
@@ -109,13 +152,13 @@
            <widget class="QPushButton" name="addBtn">
             <property name="minimumSize">
              <size>
-              <width>0</width>
+              <width>30</width>
               <height>30</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>16777215</width>
+              <width>30</width>
               <height>30</height>
              </size>
             </property>
@@ -238,14 +281,113 @@
        <string notr="true">background-color: white; </string>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
        <item>
-        <widget class="QWidget" name="topToolSubContainer" native="true">
+        <widget class="QFrame" name="topToolSubContainer">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
          <property name="styleSheet">
-          <string notr="true">background-color: white; </string>
+          <string notr="true">#topToolSubContainer {
+ background-color: white; 
+ border: none; 
+}
+
+#topLeftToolSubContainer {
+ background-color: white; 
+ border: none; 
+}
+
+#topRightToolSubContainer {
+ background-color: white; 
+ border: none; 
+}
+
+
+#layout_17 {
+ background-color: white; 
+ border: none; 
+}
+
+#layout_17 QPushButton {
+  color: black; 
+  background-color: white;
+  border: 2px;
+  border-radius: 10px;  
+}
+
+#layout_17 QPushButton:hover {
+  background-color: rgb(215,219,225); ; 
+}
+
+
+#topLeftToolSubContainer QPushButton {
+	margin: 0 0 0 4px; 
+    border: none; 
+    background-color: white; 
+}
+
+#topRightToolSubContainer QPushButton {
+	margin: 0 0 0 4px; 
+    border: none; 
+    background-color: white; 
+}
+
+#topLeftToolSubContainer QPushButton:hover {
+  background-color: rgb(215,219,225); 
+}
+
+#topRightToolSubContainer QPushButton:hover {
+  background-color: rgb(215,219,225); 
+}</string>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
           <item alignment="Qt::AlignLeft">
-           <widget class="QFrame" name="topRightToolSubContainer">
+           <widget class="QFrame" name="topLeftToolSubContainer">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -260,16 +402,16 @@
               <enum>QLayout::SetDefaultConstraint</enum>
              </property>
              <property name="leftMargin">
-              <number>0</number>
+              <number>10</number>
              </property>
              <property name="topMargin">
-              <number>0</number>
+              <number>3</number>
              </property>
              <property name="rightMargin">
               <number>0</number>
              </property>
              <property name="bottomMargin">
-              <number>0</number>
+              <number>3</number>
              </property>
              <item>
               <widget class="QToolButton" name="menuBtn">
@@ -283,13 +425,13 @@
                <property name="minimumSize">
                 <size>
                  <width>25</width>
-                 <height>0</height>
+                 <height>25</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
                  <width>25</width>
-                 <height>16777215</height>
+                 <height>25</height>
                 </size>
                </property>
                <property name="text">
@@ -302,13 +444,13 @@
                <property name="minimumSize">
                 <size>
                  <width>25</width>
-                 <height>0</height>
+                 <height>25</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
                  <width>25</width>
-                 <height>16777215</height>
+                 <height>25</height>
                 </size>
                </property>
                <property name="text">
@@ -321,13 +463,13 @@
                <property name="minimumSize">
                 <size>
                  <width>25</width>
-                 <height>0</height>
+                 <height>25</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
                  <width>25</width>
-                 <height>16777215</height>
+                 <height>25</height>
                 </size>
                </property>
                <property name="text">
@@ -340,13 +482,13 @@
                <property name="minimumSize">
                 <size>
                  <width>25</width>
-                 <height>0</height>
+                 <height>25</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
                  <width>25</width>
-                 <height>16777215</height>
+                 <height>25</height>
                 </size>
                </property>
                <property name="text">
@@ -359,13 +501,13 @@
                <property name="minimumSize">
                 <size>
                  <width>25</width>
-                 <height>0</height>
+                 <height>25</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
                  <width>25</width>
-                 <height>16777215</height>
+                 <height>25</height>
                 </size>
                </property>
                <property name="text">
@@ -378,13 +520,13 @@
                <property name="minimumSize">
                 <size>
                  <width>25</width>
-                 <height>0</height>
+                 <height>25</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
                  <width>25</width>
-                 <height>16777215</height>
+                 <height>25</height>
                 </size>
                </property>
                <property name="text">
@@ -392,70 +534,130 @@
                </property>
               </widget>
              </item>
+             <item>
+              <widget class="QFrame" name="layout_17">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_5">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="homeBtn">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>60</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Home</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="insertBtn">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Insert</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pageLayoutBtn">
+                  <property name="minimumSize">
+                   <size>
+                    <width>110</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>110</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Page Layout</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="viewBtn">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>60</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>View</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="toolsBtn">
+                  <property name="minimumSize">
+                   <size>
+                    <width>65</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>65</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Tools</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
             </layout>
            </widget>
           </item>
-          <item alignment="Qt::AlignLeft">
-           <widget class="QFrame" name="topCenterToolSubContainer">
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_5">
-             <property name="leftMargin">
-              <number>0</number>
-             </property>
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <property name="rightMargin">
-              <number>0</number>
-             </property>
-             <property name="bottomMargin">
-              <number>0</number>
-             </property>
-             <item>
-              <widget class="QPushButton" name="homeBtn">
-               <property name="text">
-                <string>Home</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="insertBtn">
-               <property name="text">
-                <string>Insert</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="pageLayoutBtn">
-               <property name="text">
-                <string>Page Layout</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="viewBtn">
-               <property name="text">
-                <string>View</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="toolsBtn">
-               <property name="text">
-                <string>Tools</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item>
-           <widget class="QFrame" name="topLeftToolSubContainer">
+          <item alignment="Qt::AlignRight">
+           <widget class="QFrame" name="topRightToolSubContainer">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -473,26 +675,26 @@
               <number>0</number>
              </property>
              <property name="topMargin">
-              <number>0</number>
+              <number>3</number>
              </property>
              <property name="rightMargin">
-              <number>0</number>
+              <number>10</number>
              </property>
              <property name="bottomMargin">
-              <number>0</number>
+              <number>3</number>
              </property>
              <item>
               <widget class="QPushButton" name="settingsHeaderBtn">
                <property name="minimumSize">
                 <size>
                  <width>25</width>
-                 <height>0</height>
+                 <height>25</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
                  <width>25</width>
-                 <height>16777215</height>
+                 <height>25</height>
                 </size>
                </property>
                <property name="text">
@@ -505,13 +707,13 @@
                <property name="minimumSize">
                 <size>
                  <width>25</width>
-                 <height>0</height>
+                 <height>25</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
                  <width>25</width>
-                 <height>16777215</height>
+                 <height>25</height>
                 </size>
                </property>
                <property name="text">
@@ -527,19 +729,105 @@
        </item>
        <item>
         <widget class="QWidget" name="bottomToolSubContainer" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
          <property name="styleSheet">
-          <string notr="true">background-color: white;  </string>
+          <string notr="true"/>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
           <item>
-           <widget class="QStackedWidget" name="stackedWidget">
+           <widget class="QStackedWidget" name="stackedWidgetTool">
+            <property name="styleSheet">
+             <string notr="true">QFrame {
+background-color: white;  
+border: none; 
+}
+
+QPushButton {
+    margin: 0; 
+    border: 1px;
+    border-radius: 3px;  
+    background-color: white; 
+}
+
+QPushButton:hover {
+  background-color: rgb(215,219,225); 
+}
+
+QToolButton {
+    margin: 0; 
+    border: 1px;
+    border-radius: 3px;  
+    background-color: white; 
+}
+
+QToolButton:hover {
+  background-color: rgb(215,219,225); 
+}
+</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>4</number>
             </property>
             <widget class="QWidget" name="homeToolPage">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
              <layout class="QHBoxLayout" name="horizontalLayout_11">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
               <item>
                <widget class="QFrame" name="_1_HomePageSector">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
                 </property>
@@ -595,7 +883,7 @@
                   <number>0</number>
                  </property>
                  <property name="leftMargin">
-                  <number>0</number>
+                  <number>9</number>
                  </property>
                  <property name="topMargin">
                   <number>0</number>
@@ -609,6 +897,18 @@
                  <item>
                   <widget class="QFrame" name="layout_3">
                    <layout class="QHBoxLayout" name="_2">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
                     <item>
                      <widget class="QComboBox" name="fontBox">
                       <property name="minimumSize">
@@ -727,9 +1027,21 @@
                    </layout>
                   </widget>
                  </item>
-                 <item>
+                 <item alignment="Qt::AlignHCenter">
                   <widget class="QFrame" name="layout_2">
                    <layout class="QHBoxLayout" name="_3">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
                     <item>
                      <widget class="QPushButton" name="boldBtn">
                       <property name="minimumSize">
@@ -895,7 +1207,7 @@
                   <number>0</number>
                  </property>
                  <property name="leftMargin">
-                  <number>0</number>
+                  <number>9</number>
                  </property>
                  <property name="topMargin">
                   <number>0</number>
@@ -909,6 +1221,18 @@
                  <item>
                   <widget class="QFrame" name="layout_4">
                    <layout class="QHBoxLayout" name="_4">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
                     <item>
                      <widget class="QToolButton" name="bulletsBtn">
                       <property name="text">
@@ -985,9 +1309,21 @@
                    </layout>
                   </widget>
                  </item>
-                 <item>
+                 <item alignment="Qt::AlignHCenter">
                   <widget class="QFrame" name="layout_5">
                    <layout class="QHBoxLayout" name="_5">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
                     <item>
                      <widget class="QPushButton" name="alignCenterBtn">
                       <property name="minimumSize">
@@ -1140,7 +1476,7 @@
                   <number>0</number>
                  </property>
                  <property name="leftMargin">
-                  <number>0</number>
+                  <number>9</number>
                  </property>
                  <property name="topMargin">
                   <number>0</number>
@@ -1166,6 +1502,18 @@
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <property name="leftMargin">
+                  <number>9</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item>
                   <widget class="QComboBox" name="findAndReplaceBox"/>
                  </item>
@@ -1184,8 +1532,33 @@
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_10">
+                 <property name="leftMargin">
+                  <number>9</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item>
                   <widget class="QComboBox" name="settingsBox"/>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_2">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
                  </item>
                 </layout>
                </widget>
@@ -1193,8 +1566,26 @@
              </layout>
             </widget>
             <widget class="QWidget" name="insertToolPage">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
              <layout class="QHBoxLayout" name="horizontalLayout_14">
-              <item>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item alignment="Qt::AlignLeft">
                <widget class="QFrame" name="_1_InsertPageSector">
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
@@ -1203,6 +1594,18 @@
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_12">
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item>
                   <widget class="QToolButton" name="insertTableBtn">
                    <property name="text">
@@ -1234,7 +1637,7 @@
                 </layout>
                </widget>
               </item>
-              <item>
+              <item alignment="Qt::AlignLeft">
                <widget class="QFrame" name="_3_InsertPageSector">
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
@@ -1243,6 +1646,18 @@
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_20">
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item>
                   <widget class="QToolButton" name="insertPageNumberBtn">
                    <property name="text">
@@ -1253,7 +1668,7 @@
                 </layout>
                </widget>
               </item>
-              <item>
+              <item alignment="Qt::AlignLeft">
                <widget class="QFrame" name="_2_InsertPageSector">
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
@@ -1262,6 +1677,18 @@
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_13">
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item>
                   <widget class="QToolButton" name="insertSymbolBtn">
                    <property name="text">
@@ -1279,10 +1706,38 @@
                 </layout>
                </widget>
               </item>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
              </layout>
             </widget>
             <widget class="QWidget" name="pageLayoutPage">
              <layout class="QHBoxLayout" name="horizontalLayout_15">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
               <item>
                <widget class="QFrame" name="_4_PageLayoutPageSector">
                 <property name="frameShape">
@@ -1296,7 +1751,7 @@
                   <number>0</number>
                  </property>
                  <property name="leftMargin">
-                  <number>0</number>
+                  <number>9</number>
                  </property>
                  <property name="topMargin">
                   <number>0</number>
@@ -1330,7 +1785,7 @@
                   <number>0</number>
                  </property>
                  <property name="leftMargin">
-                  <number>0</number>
+                  <number>9</number>
                  </property>
                  <property name="topMargin">
                   <number>0</number>
@@ -1344,6 +1799,18 @@
                  <item>
                   <widget class="QFrame" name="layout_8">
                    <layout class="QHBoxLayout" name="_8">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
                     <item>
                      <widget class="QToolButton" name="setMarginsBtn">
                       <property name="text">
@@ -1354,9 +1821,33 @@
                     <item>
                      <widget class="QFrame" name="layout_7">
                       <layout class="QVBoxLayout" name="verticalLayout_6">
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
                        <item>
                         <widget class="QFrame" name="layout_9">
                          <layout class="QHBoxLayout" name="_9">
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
                           <item>
                            <widget class="QLabel" name="topMarginLabel">
                             <property name="text">
@@ -1389,6 +1880,18 @@
                        <item>
                         <widget class="QFrame" name="layout_11">
                          <layout class="QHBoxLayout" name="_10">
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
                           <item>
                            <widget class="QLabel" name="leftMarginLabel">
                             <property name="text">
@@ -1424,9 +1927,33 @@
                     <item>
                      <widget class="QFrame" name="layout_10">
                       <layout class="QVBoxLayout" name="verticalLayout_7">
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
                        <item>
                         <widget class="QFrame" name="layout_6">
                          <layout class="QHBoxLayout" name="_6">
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
                           <item>
                            <widget class="QLabel" name="bottomMarginLabel">
                             <property name="text">
@@ -1459,6 +1986,18 @@
                        <item>
                         <widget class="QFrame" name="layout_12">
                          <layout class="QHBoxLayout" name="_7">
+                          <property name="leftMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>0</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
                           <item>
                            <widget class="QLabel" name="rightMarginLabel">
                             <property name="text">
@@ -1500,6 +2039,18 @@
               <item>
                <widget class="QFrame" name="_3_PageLayoutPageSector">
                 <layout class="QHBoxLayout" name="_15">
+                 <property name="leftMargin">
+                  <number>9</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item>
                   <widget class="QToolButton" name="columnsBtn">
                    <property name="text">
@@ -1527,6 +2078,18 @@
               <item>
                <widget class="QFrame" name="_2_PageLayoutPageSector">
                 <layout class="QHBoxLayout" name="_11">
+                 <property name="leftMargin">
+                  <number>9</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item>
                   <widget class="QToolButton" name="textDirectionBtn">
                    <property name="text">
@@ -1541,6 +2104,19 @@
                    </property>
                   </widget>
                  </item>
+                 <item>
+                  <spacer name="horizontalSpacer_3">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
                 </layout>
                </widget>
               </item>
@@ -1548,9 +2124,36 @@
             </widget>
             <widget class="QWidget" name="viewPage">
              <layout class="QHBoxLayout" name="horizontalLayout_18">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
               <item>
                <widget class="QFrame" name="_1_ViewPageSector">
                 <layout class="QHBoxLayout" name="_13">
+                 <property name="spacing">
+                  <number>4</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item>
                   <widget class="QPushButton" name="fullScreenBtn">
                    <property name="text">
@@ -1578,6 +2181,18 @@
               <item>
                <widget class="QFrame" name="_2_ViewPageSector">
                 <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item>
                   <widget class="QRadioButton" name="rulerRBtn">
                    <property name="text">
@@ -1608,7 +2223,7 @@
                   <number>0</number>
                  </property>
                  <property name="leftMargin">
-                  <number>0</number>
+                  <number>9</number>
                  </property>
                  <property name="topMargin">
                   <number>0</number>
@@ -1629,9 +2244,39 @@
                  <item>
                   <widget class="QFrame" name="layout_15">
                    <layout class="QVBoxLayout" name="verticalLayout_9">
+                    <property name="spacing">
+                     <number>3</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
                     <item>
                      <widget class="QFrame" name="layout_13">
                       <layout class="QHBoxLayout" name="_12">
+                       <property name="spacing">
+                        <number>3</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
                        <item>
                         <widget class="QPushButton" name="_100_percentBtn">
                          <property name="text">
@@ -1652,6 +2297,21 @@
                     <item>
                      <widget class="QFrame" name="layout_14">
                       <layout class="QHBoxLayout" name="_14">
+                       <property name="spacing">
+                        <number>3</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
                        <item>
                         <widget class="QPushButton" name="pageWidthBtn">
                          <property name="text">
@@ -1688,7 +2348,7 @@
                   <number>0</number>
                  </property>
                  <property name="leftMargin">
-                  <number>0</number>
+                  <number>9</number>
                  </property>
                  <property name="topMargin">
                   <number>0</number>
@@ -1706,6 +2366,19 @@
                    </property>
                   </widget>
                  </item>
+                 <item>
+                  <spacer name="horizontalSpacer_4">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
                 </layout>
                </widget>
               </item>
@@ -1713,9 +2386,36 @@
             </widget>
             <widget class="QWidget" name="toolsPage">
              <layout class="QHBoxLayout" name="horizontalLayout_22">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
               <item>
                <widget class="QFrame" name="_1_ToolsPageSector">
                 <layout class="QHBoxLayout" name="_16">
+                 <property name="spacing">
+                  <number>9</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
                  <item>
                   <widget class="QPushButton" name="exportFileBtn">
                    <property name="text">
@@ -1737,6 +2437,19 @@
                    </property>
                   </widget>
                  </item>
+                 <item>
+                  <spacer name="horizontalSpacer_5">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
                 </layout>
                </widget>
               </item>
@@ -1752,34 +2465,92 @@
     </item>
     <item>
      <widget class="QWidget" name="mainContainer" native="true">
+      <property name="styleSheet">
+       <string notr="true">#mainContainer {
+	background-color: white; 
+}</string>
+      </property>
       <layout class="QVBoxLayout" name="verticalLayout_10">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
        <item>
-        <widget class="QFrame" name="mainSubContainer">
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
+        <widget class="QScrollArea" name="scrollArea">
+         <property name="widgetResizable">
+          <bool>true</bool>
          </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
-         </property>
-         <layout class="QHBoxLayout" name="horizontalLayout_23">
-          <item>
-           <widget class="QTextEdit" name="textEdit"/>
-          </item>
-          <item>
-           <widget class="QScrollBar" name="verticalScrollBar">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item>
-        <widget class="QScrollBar" name="horizontalScrollBar">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1991</width>
+            <height>284</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_19">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="textEdit">
+             <property name="styleSheet">
+              <string notr="true">  background-color: white;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
         </widget>
        </item>
       </layout>
@@ -1787,8 +2558,62 @@
     </item>
     <item>
      <widget class="QWidget" name="footerContainer" native="true">
+      <property name="styleSheet">
+       <string notr="true">#footerContainer {
+	background-color: white; 
+	border: none; 
+	border-top: 1px; 
+}
+
+#footerLeftSubContainer {
+	background-color: white; 
+	border: none; 
+}
+
+#footerRightSubContainer {
+	background-color: white; 
+	border: none; 
+}
+
+QPushButton {
+    margin: 0; 
+    border: 1px;
+    border-radius: 3px;  
+    background-color: white; 
+}
+
+QPushButton:hover {
+  background-color: rgb(215,219,225); 
+}
+
+QToolButton {
+    border: 1px;
+    border-radius: 3px;  
+    background-color: white; 
+}
+
+QToolButton:hover {
+  background-color: rgb(215,219,225); 
+}
+</string>
+      </property>
       <layout class="QHBoxLayout" name="horizontalLayout_27">
-       <item>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignLeft">
         <widget class="QFrame" name="footerLeftSubContainer">
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -1797,8 +2622,26 @@
           <enum>QFrame::Raised</enum>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_25">
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
           <item>
            <widget class="QPushButton" name="pageFooterBtn">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
             <property name="text">
              <string>Page:</string>
             </property>
@@ -1806,6 +2649,18 @@
           </item>
           <item>
            <widget class="QPushButton" name="wordsFooterBtn">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
             <property name="text">
              <string>Words:</string>
             </property>
@@ -1813,6 +2668,18 @@
           </item>
           <item>
            <widget class="QPushButton" name="spellCheckFooterBtn">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
             <property name="text">
              <string>SpellCheck:</string>
             </property>
@@ -1821,7 +2688,7 @@
          </layout>
         </widget>
        </item>
-       <item>
+       <item alignment="Qt::AlignRight">
         <widget class="QFrame" name="footerRightSubContainer">
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -1830,8 +2697,26 @@
           <enum>QFrame::Raised</enum>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_26">
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
           <item>
            <widget class="QPushButton" name="eyeProtectionModeFooterBtn">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
             <property name="text">
              <string>Eye Protection Mode</string>
             </property>
@@ -1839,19 +2724,50 @@
           </item>
           <item>
            <widget class="QPushButton" name="fitPageFooterBtn">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
             <property name="text">
              <string>Fit Page to Current Window</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="zoomLevelFooterBtn"/>
+           <widget class="QComboBox" name="zoomLevelFooterBtn">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
           </item>
           <item>
            <widget class="QFrame" name="layout_16">
             <layout class="QHBoxLayout" name="_17">
              <item>
               <widget class="QPushButton" name="zoomOutFooterBtn">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>30</height>
+                </size>
+               </property>
                <property name="text">
                 <string>-</string>
                </property>
@@ -1859,6 +2775,18 @@
              </item>
              <item>
               <widget class="QSlider" name="horizontalSlider">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>30</height>
+                </size>
+               </property>
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
                </property>
@@ -1866,6 +2794,18 @@
              </item>
              <item>
               <widget class="QPushButton" name="zoomInFooterBtn">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>30</height>
+                </size>
+               </property>
                <property name="text">
                 <string>+</string>
                </property>
@@ -1876,6 +2816,18 @@
           </item>
           <item>
            <widget class="QPushButton" name="fullScreenFooterBtn">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
             <property name="text">
              <string>Full Screen</string>
             </property>
