@@ -16,6 +16,8 @@ from ui_interface import *
 from Custom_Widgets.Widgets import *
 ########################################################################
 
+# IMPORT FUNCTIONS
+from ui_functions import *
 
 ########################################################################
 ## MAIN WINDOW CLASS
@@ -33,12 +35,19 @@ class MainWindow(QMainWindow):
         # self.ui = Ui_MainWindow / user interface class
         loadJsonStyle(self, self.ui)
         ########################################################################
+        
+        # TOGGLE
+        self.ui.toogleBtn.clicked.connect(lambda: UIFunctions.toggleMenu(self))
+        
         # WORK WITH STACKED WIDGET
-        self.ui.homeBtn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.homeToolPage))
-        self.ui.insertBtn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.insertToolPage))
-        self.ui.pageLayoutBtn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.pageLayoutPage))
-        self.ui.toolsBtn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.toolsPage))
-        self.ui.viewBtn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.viewPage))
+        self.ui.homeBtn.clicked.connect(lambda: UIFunctions.showMenuIfToggled(self, self.ui.stackedWidgetTool, self.ui.homeToolPage))
+        self.ui.insertBtn.clicked.connect(lambda: UIFunctions.showMenuIfToggled(self, self.ui.stackedWidgetTool, self.ui.insertToolPage))
+        self.ui.pageLayoutBtn.clicked.connect(lambda: UIFunctions.showMenuIfToggled(self, self.ui.stackedWidgetTool, self.ui.pageLayoutPage))
+        self.ui.toolsBtn.clicked.connect(lambda: UIFunctions.showMenuIfToggled(self, self.ui.stackedWidgetTool, self.ui.toolsPage))
+        self.ui.viewBtn.clicked.connect(lambda: UIFunctions.showMenuIfToggled(self, self.ui.stackedWidgetTool, self.ui.viewPage))
+        
+        
+        
         ########################################################################
 
         self.show()
